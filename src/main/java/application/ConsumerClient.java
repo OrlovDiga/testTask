@@ -10,7 +10,7 @@ public class ConsumerClient {
 
 
     public static void main(String[] args) throws Exception {
-        RabbitLib rabbit = new RabbitLib("src/main/resources/configSubscriber.properties");
+        RabbitLib rabbit = new RabbitLib("configSubscriber.properties");
         rabbit.open();
 
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {

@@ -10,8 +10,9 @@ public class Publisher {
     private static final String NAME_EXCHANGE = "nameExchange";
 
 
-    public static void main(String[] args) throws Exception{
-        RabbitLib rabbit = new RabbitLib("src/main/resources/configProducer.properties");
+    public static void main(String[] args) throws Exception {
+
+        RabbitLib rabbit = new RabbitLib("configProducer.properties");
         rabbit.open();
 
         Random random = new Random();
